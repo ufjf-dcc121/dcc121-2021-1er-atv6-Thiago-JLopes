@@ -504,6 +504,20 @@
 
         function tdClick(event){
             console.log(event.target.className);
+            if(event.target.classList.contains("parede")){
+                    event.target.classList.remove("parede");
+                }else if(event.target.classList.contains("orcs")){
+                    event.target.classList.remove("orcs");
+                    event.target.classList.add("tesouro");
+                    event.target.textContent = "T";
+                } else if(event.target.classList.contains("tesouro")){
+                    event.target.classList.remove("tesouro");
+                    event.target.classList.add("parede");
+                    event.target.textContent = "";
+                }else{
+                    event.target.classList.add("orcs");
+                    event.target.textContent = "O";
+                }
         }
     </script>
 </body>
