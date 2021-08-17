@@ -498,7 +498,12 @@
 
             }else
             element.classList.add('parede');
-            
+
+            element.addEventListener("click", tdClick, false);
+        }
+
+        function tdClick(event){
+            console.log(event.target.className);
         }
     </script>
 </body>
