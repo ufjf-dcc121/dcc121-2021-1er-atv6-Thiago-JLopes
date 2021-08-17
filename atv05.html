@@ -494,6 +494,9 @@
 
         for (let i = 0; i < celulas.length-1; i++) {
             const element = celulas[i];
+            if(element.classList.contains('orcs') || element.classList.contains('tesouro') || element.classList.contains('parede')){
+
+            }else
             element.classList.add('parede');
             
         }
