@@ -503,7 +503,7 @@
         }
 
         function tdClick(event){
-            console.log(event.target.className);
+            console.log("Classe anterior: ", event.target.className);
             if(event.target.classList.contains("parede")){
                     event.target.classList.remove("parede");
                 }else if(event.target.classList.contains("orcs")){
@@ -518,6 +518,7 @@
                     event.target.classList.add("orcs");
                     event.target.textContent = "O";
                 }
+                console.log("classe atual: ", event.target.className);
         }
     </script>
 </body>
